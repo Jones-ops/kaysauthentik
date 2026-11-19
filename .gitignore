@@ -1,0 +1,10 @@
+# Original full-size photos (the website uses the resized copies in images/products/)
+/*.jpeg
+/*.jpg
+/logo.png
+
+# System / editor files
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

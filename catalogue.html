@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catalogue | Kay's Authentik: Body Butters, Candles &amp; Sleep Masks</title>
+  <meta name="description" content="Browse the full Kay's Authentik catalogue: whipped body butters (KSh 600 to 1,000), scented candles (KSh 1,600 to 1,900) and satin sleeping masks (KSh 500). Delivery across Kenya.">
+  <meta name="theme-color" content="#141215">
+  <link rel="canonical" href="https://kaysauthentik.netlify.app/catalogue.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kay's Authentik">
+  <meta property="og:title" content="Kay's Authentik Product Catalogue">
+  <meta property="og:description" content="Whipped body butters, scented candles and satin sleeping masks, handmade in Kenya.">
+  <meta property="og:image" content="https://kaysauthentik.netlify.app/images/products/candle-noir-1.jpg">
+  <meta property="og:url" content="https://kaysauthentik.netlify.app/catalogue.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="data/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="catalogue">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Home</a></li><li aria-current="page">Catalogue</li></ol>
+        </nav>
+        <h1>Catalogue</h1>
+        <p>Every product we make, with prices. Add items to your Enquiry List and send them to us in one message.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px" aria-label="Products">
+      <div class="container">
+        <!-- Search + sort -->
+        <form class="toolbar no-print" id="catalogue-search-form" role="search">
+          <div class="field">
+            <label for="catalogue-search">Search by name or SKU</label>
+            <div class="input-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+              <input class="input" id="catalogue-search" type="search" placeholder="e.g. vanilla, candle, KA-SC-NOIR" autocomplete="off">
+            </div>
+          </div>
+          <div class="field">
+            <label for="catalogue-sort">Sort by</label>
+            <select class="select" id="catalogue-sort">
+              <option value="featured">Featured</option>
+              <option value="newest">Newest</option>
+              <option value="name-asc">Name (A–Z)</option>
+              <option value="name-desc">Name (Z–A)</option>
+              <option value="price-asc">Price (low to high)</option>
+              <option value="price-desc">Price (high to low)</option>
+            </select>
+          </div>
+          <div class="field">
+            <span class="label" aria-hidden="true">&nbsp;</span>
+            <button class="btn btn--dark" type="button" id="download-catalogue">
+              <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Catalogue PDF
+            </button>
+          </div>
+        </form>
+
+        <!-- Category filter -->
+        <div class="chips no-print" id="category-chips" role="group" aria-label="Filter by category"></div>
+
+        <div class="results-bar">
+          <p id="results-count" aria-live="polite" style="margin:0"></p>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+        <div class="load-more-wrap no-print" id="load-more-wrap"></div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact &amp; Request a Quote | Kay's Authentik</title>
+  <meta name="description" content="Contact Kay's Authentik on WhatsApp or by phone, or send a quote request for body butters, scented candles and sleep masks. Delivery across Kenya.">
+  <meta name="theme-color" content="#141215">
+  <link rel="canonical" href="https://kaysauthentik.netlify.app/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Kay's Authentik">
+  <meta property="og:title" content="Contact Kay's Authentik">
+  <meta property="og:description" content="Chat with us on WhatsApp or request a quote. Delivery across Kenya.">
+  <meta property="og:image" content="https://kaysauthentik.netlify.app/images/products/body-butter-200-2.jpg">
+  <meta property="og:url" content="https://kaysauthentik.netlify.app/contact.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/config.js" defer></script>
+  <script src="data/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body data-page="contact">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol><li><a href="index.html">Home</a></li><li aria-current="page">Contact / Quote</li></ol>
+        </nav>
+        <h1>Contact &amp; Quotes</h1>
+        <p>Tell us what you need, whether that's one jar, a gift for a friend or a bulk order for an event, and we'll send you a quote.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+
+        <!-- ========== QUOTE FORM ========== -->
+        <div class="card">
+          <h2 style="font-size:1.6rem;text-transform:uppercase">Request a quote</h2>
+          <p style="color:var(--concrete)">Fields marked <span class="req">*</span> are required. When you send the form, your request opens in WhatsApp, ready to send.</p>
+
+          <div class="form-alert" id="form-alert" role="alert" tabindex="-1"></div>
+
+          <form id="quote-form" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="q-name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="q-name" name="name" type="text" autocomplete="name" required aria-describedby="q-name-err">
+                <span class="field-error" id="q-name-err"></span>
+              </div>
+              <div class="field">
+                <label for="q-company">Company <span class="optional">(optional)</span></label>
+                <input class="input" id="q-company" name="company" type="text" autocomplete="organization">
+              </div>
+              <div class="field">
+                <label for="q-phone">Phone / WhatsApp <span class="req" aria-hidden="true">*</span></label>
+                <input class="input" id="q-phone" name="phone" type="tel" autocomplete="tel" placeholder="07XX XXX XXX" required aria-describedby="q-phone-err">
+                <span class="field-error" id="q-phone-err"></span>
+              </div>
+              <div class="field">
+                <label for="q-email">Email <span class="optional">(optional)</span></label>
+                <input class="input" id="q-email" name="email" type="email" autocomplete="email" aria-describedby="q-email-err">
+                <span class="field-error" id="q-email-err"></span>
+              </div>
+              <div class="field full">
+                <label for="q-product">Product of interest</label>
+                <select class="select" id="q-product" name="product"></select>
+              </div>
+              <div class="full enquiry-summary" id="enquiry-summary" hidden></div>
+              <div class="field full">
+                <label for="q-message">Message <span class="req" aria-hidden="true">*</span></label>
+                <textarea class="textarea" id="q-message" name="message" placeholder="Quantities, preferred scent, delivery location, event date…" required aria-describedby="q-message-err"></textarea>
+                <span class="field-error" id="q-message-err"></span>
+              </div>
+              <div class="full">
+                <button class="btn btn--primary" type="submit" id="q-submit">
+                  Send quote request
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- ========== CONTACT DETAILS ========== -->
+        <div>
+          <div class="wa-panel">
+            <h2>Fastest: WhatsApp</h2>
+            <p>Chat directly with the seller about prices, scents, stock and delivery.</p>
+            <a class="btn btn--wa btn--block" data-wa href="#">Chat on WhatsApp</a>
+          </div>
+
+          <ul class="contact-list">
+            <li>
+              <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span>
+              <div><strong>Call / WhatsApp</strong><a data-tel href="#"><span data-site="phoneDisplay"></span></a></div>
+            </li>
+            <li data-email-wrap>
+              <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg></span>
+              <div><strong>Email</strong><a data-email href="#"></a></div>
+            </li>
+            <li>
+              <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><strong>Location</strong><span data-site="location"></span><br><small style="color:var(--concrete)" data-site="serviceArea"></small></div>
+            </li>
+            <li>
+              <span class="ci"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></span>
+              <div><strong>Hours</strong><span data-site="hours"></span></div>
+            </li>
+          </ul>
+
+          <!-- MAP: to show your exact location, open Google Maps, find your shop,
+               click Share → Embed a map → copy the src="..." link and paste it below. -->
+          <div class="map-wrap">
+            <iframe title="Map showing Kay's Authentik's location in Nairobi, Kenya" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Nairobi,Kenya&amp;z=11&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
