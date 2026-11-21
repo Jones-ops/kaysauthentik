@@ -104,6 +104,13 @@ The About story, home page headline and "Why choose us" points are ordinary text
 
 ---
 
+## Google search
+
+- `sitemap.xml` lists every page for Google. **When you add or remove a product, add or remove its line in `sitemap.xml` too.**
+- The site is registered in Google Search Console (search.google.com/search-console). After big changes, open it → *Sitemaps* → resubmit `sitemap.xml`.
+
+---
+
 ## 6. Put the website online (free)
 
 **Easiest: Netlify Drop**

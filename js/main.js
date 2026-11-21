@@ -121,7 +121,12 @@
     set('meta[property="og:title"]', "content", title);
     set('meta[property="og:description"]', "content", description);
     if (image) set('meta[property="og:image"]', "content", new URL(image, SITE.siteUrl + "/").href);
-    set('meta[property="og:url"]', "content", SITE.siteUrl + "/" + location.pathname.split("/").pop() + location.search);
+    const pageUrl = SITE.siteUrl + "/product.html" + location.search;
+    set('meta[property="og:url"]', "content", pageUrl);
+    // Tell Google the one official address of this product page
+    let canon = $('link[rel="canonical"]');
+    if (!canon) { canon = document.createElement("link"); canon.rel = "canonical"; document.head.appendChild(canon); }
+    canon.href = pageUrl;
   }
 
   /* =================================================================
